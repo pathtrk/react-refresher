@@ -1,24 +1,35 @@
 import React, { useState } from 'react';
 
 interface CounterProps {
-  // TODO: Add props interface
+  // Add props interface
+  count: number;
 }
 
 const Counter: React.FC<CounterProps> = () => {
-  // TODO: Add useState hook for counter state
-  
-  // TODO: Create increment function
-  
-  // TODO: Create decrement function
-  
-  // TODO: Create reset function
+  // Add useState hook for counter state
+  const [count, setCount] = useState(0);
+
+  // Create increment function
+  const incrementCount = () => setCount(count + 1);
+
+  // Create decrement function
+  const decrementCount = () => count > 0 ? setCount(count - 1) : 0;
+
+  // Create reset function
+  const resetCount = () => setCount(0);
 
   return (
     <div>
-      {/* TODO: Add counter display */}
-      {/* TODO: Add increment button */}
-      {/* TODO: Add decrement button */}
-      {/* TODO: Add reset button */}
+      {/* Add counter display */}
+      <p> Count: { count } </p>
+      <div id="buttonGroup">
+        {/* Add increment button */}
+        <button onClick={incrementCount}> Increment </button>
+        {/* Add decrement button */}
+        <button onClick={decrementCount}> Decrement </button>
+        {/* Add reset button */}
+        <button onClick={resetCount}> Reset </button>
+      </div>
     </div>
   );
 };
