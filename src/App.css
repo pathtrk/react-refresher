@@ -47,3 +47,12 @@
   justify-content: center;
 }
 
+#nameDisplay input[type="text"] {
+  font-size: 1.0em;
+  color: darkslateblue;
+  border-radius: 8px;
+  border: 1px mediumslateblue solid;
+  padding: 0.5em 0.75em;
+  margin-right: 0.5em;
+}
+

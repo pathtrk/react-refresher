@@ -1,12 +1,12 @@
-import Counter from './components/Counter';
+import NameDisplay from './components/NameDisplay';
 import './App.css'
 
 function App() {
   return (
     <div>
-      <h1>React Practice - Day 1</h1>
-      {/* Add Counter component */}
-      <Counter count={0} />
+      <h1>React Practice - Day 2</h1>
+      {/* Add NameDisplay component */}
+      <NameDisplay />
     </div>
   )
 }
