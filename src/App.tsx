@@ -1,12 +1,12 @@
-import SimpleTodo from './components/SimpleTodo';
+import PersistentCounter from './components/PersistentCounter';
 import './App.css'
 
 function App() {
   return (
     <div>
       <h1>React Practice - Day 2</h1>
-      {/* Add SimpleTodo component */}
-      <SimpleTodo />
+      {/* Add PersistentCounter component */}
+      <PersistentCounter />
     </div>
   )
 }
