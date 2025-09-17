@@ -59,11 +59,4 @@ input[type="text"] {
 li {
   text-align: left;
   color: mediumslateblue;
-  list-style-type: square;
-  list-style-position: inside;
-  padding-left: 0.5em;
-}
-
-li:nth-child(odd) {
-    background-color: #f5f5f5;
 }

@@ -28,10 +28,10 @@ const SimpleTodo: React.FC = () => {
   return (
     <div className="p-6 max-w-md mx-auto">
       <h2 className="text-2xl font-bold mb-4">Simple Todo</h2>
-      <ul>
+      <ul role="list" className="divide-y divide-gray-100">
         {/* render todos with map() */}
         {todos.map(todo => (
-          <li key={todo.id}>{todo.todo}</li>
+          <li className="flex justify-between gap-x-6 py-5" key={todo.id}>{todo.todo}</li>
         ))}
       </ul>
       <input type="text" onChange={inputTodo} onKeyDown={enterKeyAdd} placeholder="New todo" value={newTodo.todo} />
